@@ -4,6 +4,7 @@ import com.testcontainers.demo.jooq.tables.Person;
 import lombok.RequiredArgsConstructor;
 import org.jooq.DSLContext;
 import org.jooq.SQLDialect;
+import org.jooq.impl.DSL;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.JdbcTest;
@@ -11,10 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.svenehrke.demo.springflywayjooq.domain.PersonDTO;
 import org.testcontainers.containers.PostgreSQLContainer;
 
-import org.jooq.impl.DSL;
-
 import javax.sql.DataSource;
-
 import java.sql.SQLException;
 import java.util.List;
 
